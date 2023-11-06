@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color:black;
     width:150px;
     height: 550px;
@@ -10,22 +11,60 @@
     margin-top: 50px;
   }
 
-  
+
  .red {
     background-color: rgb(165, 14, 14);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 10px 0px 0px 10px;
   }
 
   .yellow {
     background-color: rgb(152, 152, 14);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 10px 0px 0px 10px;
   }
+  
   
   .green {
-    background-color: #109710;
+    background-color: rgb(77, 208, 77);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 10px 0px 0px 10px;
   }
   
- 
-
   
+  .redGlow {
+    background-color: #a50e0e;
+    box-shadow: 2px 5px 30px rgb(219, 219, 99);;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 10px 0px 0px 10px;
+  }
+
+  .yellowGlow{
+    background-color: rgb(152, 152, 14);
+    box-shadow: 2px 5px 30px  rgb(219, 219, 99);;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 10px 0px 0px 10px;
+  }
+
+  .greenGlow{
+    background-color: rgb(77, 208, 77);
+    box-shadow: 2px 5px 30px  rgb(219, 219, 99);;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 10px 0px 0px 10px;
+}
+
 /* 
 
     You can write your own styles here...

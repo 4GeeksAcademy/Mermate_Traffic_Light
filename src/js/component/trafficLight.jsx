@@ -9,45 +9,42 @@ const TrafficLight= ()=>  {
 
 	function redLight () {
 	if (redColor === "red"){
-		setRedColor ("grey")
+		setRedColor ("redGlow")
 	} else {
-		setRedColor("red")
-		setYellowColor ("grey")
-		setGreenColor ("grey")
+		//setRedColor("red")
+		setYellowColor ("yellow")
+		setGreenColor ("green")
 	}
 
 }
 	
 	function yellowLigth () {
-		
 		if (yellowColor === "yellow"){
-			setYellowColor ("grey")
+			setYellowColor ("yellowGlow")
 		} else {
-			setYellowColor ("yellow")
-			setRedColor ("grey")
-			setGreenColor  ("grey")
+			//setYellowColor ("yellow")
+			setRedColor ("red")
+			setGreenColor  ("green")
 		}
-
-	}
+}
 	
 		function greenLight () {
-			
 			if (greenColor === "green"){
-				setGreenColor ("grey")
+				setGreenColor ("greenGlow")
 			} else {
-				setGreenColor("green")
-				setRedColor ("grey")
-				setYellowColor ("grey")
+				//setGreenColor("green")
+				setRedColor ("red")
+				setYellowColor ("yellow")
 			}
 		}
 		
 	return (
 		<>
 		<div className= "Light-container" >
-		<button onClick={redLight} style={{backgroundColor:redColor, width:150, height:150, marginTop:10, borderRadius:"50%" }}></button>
-		<button onClick={yellowLigth}style={{backgroundColor: yellowColor,width:150,height: 150, marginTop:30,borderRadius:100 }}></button>
-		<button onClick={greenLight} style={{backgroundColor: greenColor, width:150,height: 150, marginTop:30,borderRadius:100 }}></button>
-		</div>
+		<button className={redColor} onClick={redLight}></button>
+			<button className={yellowColor} onClick={yellowLigth}></button>
+			<button className={greenColor} onClick={greenLight}></button>
+			</div>
 		</>
 	);
 
