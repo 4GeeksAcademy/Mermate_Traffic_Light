@@ -1,53 +1,60 @@
 import React ,{useState}from "react";
 import "../../styles/index.css";
    
-const TrafficLight= ()=>  {
+	const TrafficLight= ()=>  {
 
 	const [redColor, setRedColor] = useState("red");
 	const [yellowColor, setYellowColor] = useState("yellow");
 	const [greenColor, setGreenColor] = useState("green");
 
 	function redLight () {
-	if (redColor === "red"){
-		setRedColor ("redGlow")
-	} else {
-		//setRedColor("red")
-		setYellowColor ("yellow")
-		setGreenColor ("green")
+		if (redColor === "red"){
+			setRedColor ("redGlow")
+			setYellowColor('yellow')
+			setGreenColor('green')
+		} else {
+			setRedColor("red")
+			setYellowColor ("yellow")
+			setGreenColor ("green")
+		}
 	}
-
-}
 	
 	function yellowLigth () {
+
 		if (yellowColor === "yellow"){
 			setYellowColor ("yellowGlow")
+			setRedColor("red")
+            setGreenColor ("green")
 		} else {
-			//setYellowColor ("yellow")
 			setRedColor ("red")
+			setYellowColor ("yellow")
 			setGreenColor  ("green")
 		}
-}
+	}
 	
-		function greenLight () {
+	function greenLight () {
+
 			if (greenColor === "green"){
 				setGreenColor ("greenGlow")
-			} else {
-				//setGreenColor("green")
 				setRedColor ("red")
 				setYellowColor ("yellow")
+			} else {
+				setRedColor ("red")
+				setYellowColor ("yellow")
+				setGreenColor("green")
 			}
-		}
+	}
 		
-	return (
-		<>
-		<div className= "Light-container" >
-		<button className={redColor} onClick={redLight}></button>
-			<button className={yellowColor} onClick={yellowLigth}></button>
-			<button className={greenColor} onClick={greenLight}></button>
-			</div>
-		</>
-	);
+		return (
+			<>
+			<div className= "traffic-light" >
+			<div className={redColor} onClick={redLight}></div>
+				<div className={yellowColor} onClick={yellowLigth}></div>
+				<div className={greenColor} onClick={greenLight}></div>
+				</div>
+			</>
+		);
 
-};
+	};
 
 export default TrafficLight ;

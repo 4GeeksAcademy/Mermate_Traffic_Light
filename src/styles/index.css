@@ -1,66 +1,77 @@
-.Light-container {
+.traffic-light {
+    background-color:black;
+    width:160px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+   
+  }
+
+.traffic-light-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  
+.traffic-light-pole {
     background-color:black;
-    width:150px;
-    height: 550px;
-    border-radius:10px;
-    margin-left: 600px;
-    margin-top: 50px;
+    width: 20px;
+    height:100px;
+    display: flex;
+    justify-content: center; 
   }
 
-
- .red {
-    background-color: rgb(165, 14, 14);
-    width: 120px;
-    height: 120px;
+.red {
+    background-color:red;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     margin: 10px 0px 0px 10px;
   }
 
-  .yellow {
-    background-color: rgb(152, 152, 14);
-    width: 120px;
-    height: 120px;
+.yellow {
+    background-color:yellow;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     margin: 10px 0px 0px 10px;
   }
-  
-  
-  .green {
-    background-color: rgb(77, 208, 77);
-    width: 120px;
-    height: 120px;
+   
+.green {
+    background-color:green;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     margin: 10px 0px 0px 10px;
   }
-  
-  
-  .redGlow {
-    background-color: #a50e0e;
-    box-shadow: 2px 5px 30px rgb(219, 219, 99);;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    margin: 10px 0px 0px 10px;
-  }
-
-  .yellowGlow{
-    background-color: rgb(152, 152, 14);
-    box-shadow: 2px 5px 30px  rgb(219, 219, 99);;
-    width: 120px;
-    height: 120px;
+   
+.redGlow {
+    background-color: red;
+    box-shadow: 2px 5px 90px rgb(236, 236, 146);
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     margin: 10px 0px 0px 10px;
   }
 
-  .greenGlow{
-    background-color: rgb(77, 208, 77);
-    box-shadow: 2px 5px 30px  rgb(219, 219, 99);;
-    width: 120px;
-    height: 120px;
+.yellowGlow{
+    background-color:yellow;
+    box-shadow: 2px 5px 90px rgb(236, 236, 146);
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin: 10px 0px 0px 10px;
+  }
+
+.greenGlow{
+    background-color:green ;
+    box-shadow: 2px 5px 90px rgb(236, 236, 146);
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     margin: 10px 0px 0px 10px;
 }
